@@ -64,6 +64,8 @@ $ cd instant-ngp
 
 Then, use CMake to build the project: (on Windows, this must be in a [developer command prompt](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-160#developer_command_prompt))
 ```sh
+ON MY MACHINE: 
+cmake . -B build -DCMAKE_CUDA_COMPILER=/usr/local/cuda-11/bin/nvcc
 instant-ngp$ cmake . -B build
 instant-ngp$ cmake --build build --config RelWithDebInfo -j
 ```
